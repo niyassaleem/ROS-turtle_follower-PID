@@ -105,10 +105,7 @@ class TwistPublisherNode(Node):
         turtle1_theta = self.latest_pose.theta 
         turtle2_x = self.latest_pose2.x
         turtle2_y = self.latest_pose2.y
-        turtle2_theta = self.latest_pose2.theta
-
-        self.timer_period = 0.5  # seconds
-
+        turtle2_theta = self.latest_pose2.thetA
 
         dx = turtle1_x - turtle2_x
         dy = turtle1_y - turtle2_y
