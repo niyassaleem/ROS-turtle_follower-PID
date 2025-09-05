@@ -1,8 +1,8 @@
-Turtle2 Follower Node for ROS2 Turtlesim
+**Turtle2 Follower Node for ROS2 Turtlesim**
 
 This ROS2 package spawns a second turtle (turtle2) in the standard turtlesim simulator and controls it to follow the default turtle1 using a PID controller for smooth tracking.
 
-Features
+**Features**
 
 Spawn turtle2 at a specified location with a custom pen color.
 
@@ -16,32 +16,32 @@ Stops moving when within a threshold distance of the target.
 
 Uses multi-threaded executor to handle asynchronous operations cleanly.
 
-Requirements
+**Requirements**
 
 ROS2 (tested with Foxy/Galactic/Humble)
 
 turtlesim package installed (sudo apt install ros-<ros-distro>-turtlesim)
 
-Installation
+**Installation**
 
 Clone the repository into your ROS2 workspace:
 
-cd ~/ros2_ws/src
+_cd ~/ros2_ws/src
 git clone <your-repo-url>
 cd ~/ros2_ws
 colcon build
-source install/setup.bash
+source install/setup.bash_
 
-Usage
+**Usage**
 
 Launch the turtlesim simulator:
 
-ros2 run turtlesim turtlesim_node
+_ros2 run turtlesim turtlesim_node_
 
 
 Run your follower node:
 
-ros2 run <your_package_name> <your_executable_name>
+_ros2 run <your_package_name> <your_executable_name>_
 
 
 This will:
@@ -50,13 +50,13 @@ Spawn turtle2 at (3, 3) with an orange pen.
 
 turtle2 will start following turtle1 using the PID controller.
 
-Code Structure
+**Code Structure**
 
 SpawnNode: Handles spawning turtle2 and setting its pen color.
 
 TwistPublisherNode: Subscribes to poses and publishes velocity commands to follow turtle1.
 
-Parameters (PID gains)
+**Parameters (PID gains)**
 
 Linear PID: Kp=1.5, Ki=0.2, Kd=0.05
 
