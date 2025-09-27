@@ -18,7 +18,7 @@ Uses multi-threaded executor to handle asynchronous operations cleanly.
 
 **Requirements**
 
-ROS2 (tested with Foxy/Galactic/Humble)
+ROS2 (tested with Humble)
 
 turtlesim package installed (sudo apt install ros-<ros-distro>-turtlesim)
 
